@@ -14,5 +14,6 @@ config :discuss, Discuss.Repo,
   adapter: Ecto.Adapters.Postgres,
   username: System.get_env("DB_USERNAME"),
   password: System.get_env("DB_PASSWORD"),
+  database: "discuss_test",
   hostname: System.get_env("DB_HOST"),
   pool: Ecto.Adapters.SQL.Sandbox
